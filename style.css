@@ -2,6 +2,7 @@ html{
     background-color: #f4f9f9;
 }
 
+
 .title{
     text-align: center;
 }
@@ -26,6 +27,13 @@ form > button {
     padding-top: 6px;
 }
 
+.playerCard{ 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 30px;
+}
 .card {
     border: solid red;
+    text-align: center;
 }
+

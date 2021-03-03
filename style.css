@@ -8,6 +8,8 @@ html{
 
 form{
     text-align: center;
+    margin-top: 50px;
+    /* border: solid red; */
 }
 
 form > input{ 
@@ -17,8 +19,9 @@ form > input{
     font-size: 20px;
 
 }
-
-form > button{
+form > button {
     height: 45px;
     width: 40px;
+    position: relative;
+    padding-top: 6px;
 }

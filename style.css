@@ -25,3 +25,7 @@ form > button {
     position: relative;
     padding-top: 6px;
 }
+
+.card {
+    border: solid red;
+}

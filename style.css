@@ -49,3 +49,9 @@ img{
     display:block;
     z-index:999;
 }
+
+#myUL {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }

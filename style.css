@@ -41,7 +41,7 @@ form > button {
     margin-top: 30px;
 }
 .card {
-    border: solid red;
+    /* border: solid red; */
     text-align: center;
 }
 

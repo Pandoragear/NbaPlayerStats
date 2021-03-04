@@ -16,3 +16,8 @@ function myFunction() {
         }
     }
 }
+
+function clearInput(){
+    document.getElementById("myInput").value = "";
+}
+

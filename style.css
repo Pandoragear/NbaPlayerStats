@@ -24,8 +24,16 @@ form > button {
     height: 45px;
     width: 40px;
     position: relative;
-    padding-top: 6px;
+    padding-top: 1px;
+    padding-bottom: 8px;
 }
+
+.far.fa-times-circle{
+    font-size: 22px;
+    position: relative;
+    margin-top: 5px;
+}
+
 
 .playerCard{ 
     display: grid;

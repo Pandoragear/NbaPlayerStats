@@ -9,7 +9,14 @@ function fetchData() {
     .then((data) => {
       console.log(data.league.standard);
       const html = data.league.standard.map(user =>{
-          return `<p> Name: ${user.firstName} </p>` 
+          return `
+          <div class ="user">
+          <p> Name: ${user.firstName} ${user.lastName}</p>
+          <p> Position: ${user.pos}</p>
+          <p> draft: ${user.draft.pickNum}</p>
+          </div>
+
+          `; 
       })
       .join("");
       console.log(html);

@@ -33,7 +33,7 @@ form > button {
     margin-top: 30px;
 }
 .card {
-    border: solid red;
+    /* border: solid red; */
     text-align: center;
 }
 
@@ -41,21 +41,24 @@ img{
     height: 150px;
 }
 
+/* enlarge picture  */
 .thumbnail:hover {
     position:relative;
     top:-25px;
-    width:500px;
+    width:350px;
     height:auto;
     display:block;
     z-index:999;
 }
 
+/* remove bullet point */
 #myUL {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
+/* Remove underline */
 a{
     text-decoration: none;
 }

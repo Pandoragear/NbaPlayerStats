@@ -1,4 +1,4 @@
-function myFunction() {
+function textSearch() {
     var input, filter, ul, li, a, i, txtValue;
     input = document.getElementById("myInput");
     filter = input.value.toUpperCase();
@@ -16,3 +16,8 @@ function myFunction() {
         }
     }
 }
+
+function clearInput(){
+    document.getElementById("myInput").value = "";
+}
+

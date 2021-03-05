@@ -1,7 +1,7 @@
-// This fetch data on the player first & Last name
+// This fetch data on pulling the player statistics
 
 function fetchData() {
-  fetch("http://data.nba.net/10s/prod/v1/2020/players.json")
+  fetch("http://data.nba.net/data/10s/prod/v1/2020/players/1628983_profile.json")
     .then((response) => {
       if (!response.ok) {
         throw Error("Error");
@@ -9,13 +9,11 @@ function fetchData() {
       return response.json();
     })
     .then((data) => {
-      console.log(data.league.standard);
-      const html = data.league.standard.map(user =>{
+      console.log(data.league.standard.stats.latest);
+      const html = data.league.standard.stats.latest.map(user =>{
           return `
           <div class ="user">
           <p> Name: ${user.firstName} ${user.lastName}</p>
-          <p> Position: ${user.pos}</p>
-          <p> draft: ${user.draft.pickNum}</p>
           </div>
 
           `; 

@@ -11,8 +11,9 @@ function fetchData() {
       const html = data.league.standard.map(user =>{
           return `<p> Name: ${user.firstName} </p>` 
       })
+      .join("");
       console.log(html);
-      document.querySelector("#stat").insertAdjacentHTML("afterbegin", "<h1>test </h1>"); 
+      document.querySelector("#stat").insertAdjacentHTML("afterbegin", html); 
     })
     .catch((error) => {
       console.log(error);

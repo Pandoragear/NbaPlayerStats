@@ -1,3 +1,9 @@
 body{
     background-color: lightgrey;
 }
+
+.user{ 
+    background-color: lightyellow;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}

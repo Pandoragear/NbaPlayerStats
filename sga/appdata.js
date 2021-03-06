@@ -11,11 +11,27 @@ function fetchData() {
     .then((data) => {
       console.log(data.league.standard.stats.latest);
       const profile = data.league.standard.stats.latest;
-      const html = profile.ppg;
-      const next = profile.rpg;
+      const ppg = profile.ppg;
+      const rpg = profile.rpg;
+      const apg = profile.apg;
+      const mpg = profile.mpg;
+      const assists = profile.assists;
+      const blocks = profile.blocks;
+      const steals = profile.steals;
+      const turnovers = profile.turnovers;
+      const point = profile.assists;
+      const gamesPlayed = profile.gamesPlayed;
 
-      document.querySelector("#stat").innerHTML = `apg: ${html}` ; 
-      document.querySelector("#stats").innerHTML = `rpg: ${next}` ; 
+      document.querySelector("#ppg").innerHTML = `ppg: ${ppg}` ; 
+      document.querySelector("#rpg").innerHTML = `rpg: ${rpg}` ; 
+      document.querySelector("#apg").innerHTML = `apg: ${apg}` ; 
+      document.querySelector("#mpg").innerHTML = `mpg: ${mpg}` ; 
+      document.querySelector("#assists").innerHTML = `assists: ${assists}` ; 
+      document.querySelector("#blocks").innerHTML = `blocks: ${blocks}` ; 
+      document.querySelector("#steals").innerHTML = `steals: ${steals}` ; 
+      document.querySelector("#turnovers").innerHTML = `turnovers: ${turnovers}` ; 
+      document.querySelector("#point").innerHTML = `point: ${point}` ; 
+      document.querySelector("#gamesPlayed").innerHTML = `gamesPlayed: ${gamesPlayed}` ; 
 
     })
     .catch((error) => {

@@ -10,17 +10,13 @@ function fetchData() {
     })
     .then((data) => {
       console.log(data.league.standard.stats.latest);
-      const html = data.league.standard.stats.latest.map(user =>{
-          return `
-          <div class ="user">
-          <p> Name: ${user.firstName} ${user.lastName}</p>
-          </div>
+      const profile = data.league.standard.stats.latest;
+      const html = profile.ppg;
+      const next = profile.rpg;
 
-          `; 
-      })
-      .join("");
-      console.log(html);
-      document.querySelector("#stat").insertAdjacentHTML("afterbegin", html); 
+      document.querySelector("#stat").innerHTML = `apg: ${html}` ; 
+      document.querySelector("#stats").innerHTML = `rpg: ${next}` ; 
+
     })
     .catch((error) => {
       console.log(error);

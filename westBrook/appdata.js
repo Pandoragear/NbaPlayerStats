@@ -1,7 +1,7 @@
 // This fetch data on pulling the player statistics
 
 function fetchData() {
-  fetch("http://data.nba.net/data/10s/prod/v1/2020/players/1628983_profile.json")
+  fetch("http://data.nba.net/data/10s/prod/v1/2020/players/201566_profile.json")
     .then((response) => {
       // will throw and error if cannot load page 
       if (!response.ok) {

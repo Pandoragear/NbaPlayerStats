@@ -1,0 +1,21 @@
+body{
+    background-color: lightgrey;
+}
+
+.user{ 
+    background-color: lightyellow;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+div > h1 {
+    text-align: center;
+}
+
+.stat{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    font-size: 20px;
+}
+
